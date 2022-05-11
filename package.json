@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "start": "node index.js",
+    "start": "node index.js",
+    "test": "node ./node_modules/jest/bin/jest",
+    "test_exp": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },  
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^28.1.0"
+    "jest": "^28.1.0",
+    "mocha": "^10.0.0"
   }
 }
